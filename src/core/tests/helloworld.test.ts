@@ -1,8 +1,8 @@
 import { MemoryDatastore } from 'interface-datastore'
 import CID from 'cids'
-import { Peer } from '../src'
-import { Blockstore } from '../src/blockstore'
-import { setupLibP2PHost } from './utils'
+import { Peer } from '../'
+import { Blockstore } from '../blockstore'
+import { setupLibP2PHost } from '../../utils'
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms))
 let lite: Peer

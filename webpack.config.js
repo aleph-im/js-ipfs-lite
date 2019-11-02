@@ -10,7 +10,7 @@ const filename = 'index.min.js'
 
 module.exports = {
   mode: 'production',
-  entry: './src/index.ts',
+  entry: './src/core/index.ts',
   devtool: 'source-map',
   module: {
     rules: [

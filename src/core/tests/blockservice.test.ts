@@ -3,8 +3,8 @@ import multihashing from 'multihashing-async'
 import { collect } from 'streaming-iterables'
 import Bitswap from 'ipfs-bitswap'
 import { MemoryDatastore } from 'interface-datastore'
-import { BlockService } from '../src/blockservice'
-import { Blockstore, Block } from '../src/blockstore'
+import { BlockService } from '../blockservice'
+import { Blockstore, Block } from '../blockstore'
 
 let bs: BlockService
 let testBlocks: Block[]

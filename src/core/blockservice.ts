@@ -1,6 +1,6 @@
 import Bitswap from 'ipfs-bitswap'
 import CID from 'cids'
-import { Blockstore, Block } from '../blockstore'
+import { Blockstore, Block } from './blockstore'
 
 /**
  * `BlockService` is a hybrid block data-store.

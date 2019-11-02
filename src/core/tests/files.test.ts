@@ -2,9 +2,9 @@ import { createReadStream, promises as fs } from 'fs'
 import { MemoryDatastore } from 'interface-datastore'
 import exporter from 'ipfs-unixfs-exporter'
 import importer from 'ipfs-unixfs-importer'
-import { Peer } from '../src'
-import { Blockstore } from '../src/blockstore'
-import { setupLibP2PHost } from './utils'
+import { Peer } from '../'
+import { Blockstore } from '../blockstore'
+import { setupLibP2PHost } from '../..//utils'
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms))
 let lite: Peer
@@ -20,6 +20,7 @@ describe('getting and putting files', () => {
   })
   afterAll(async () => {
     await lite.stop()
+    await fs.unlink('bar.txt')
   })
 
   it('read file from disc and put to "network"', async () => {

@@ -2,7 +2,7 @@ import CID from 'cids'
 import { Key, MemoryDatastore, Query } from 'interface-datastore'
 import multihashing from 'multihashing-async'
 import { collect } from 'streaming-iterables'
-import { cidToKey, keyToCid, Block, Blockstore } from '../src/blockstore'
+import { cidToKey, keyToCid, Block, Blockstore } from '../blockstore'
 
 let blocks: Blockstore
 
